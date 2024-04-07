@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.background-container {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    width: 80%; /* Adjust the width as needed */
+    height: 70%; /* Adjust the height as needed */
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plane-image {
+    position: absolute;
+    top: 50%;
+    transform: translate(10%, -50%) scale(0.8); 
+    max-width: 60%; /* Adjust the size of the plane image as needed */
+    z-index: 1;
+}
+
+.clouds-image {
+    box-shadow: 50px 40px 50px rgba(0, 0, 0, 0.5);
+}
+
+.paragraphs {
+    position: absolute;
+    top: 10%;
+    right: 25%; /* Adjust the right position as needed */
+    color: white; /* Adjust the color as needed */
+    text-align: right;
+    margin-top: 35px;
+}
+
+.paragraphs p {
+    padding-top: 7px;
+    margin: 0px;
+}
+
+.big {
+    font-size: 24px; 
+    text-align: left;
+}
+
+.small {
+    font-size: 18px; 
+    text-align: right;
+}
+
+.background-container img {
+    width: 60%; /* Increase the width */
+    height: 90%; /* Increase the height */
+    object-fit: cover;
+    border-radius: 5px; /* Optional: add border radius */
+}   
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(110% - 22px);
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: rgba(54, 83, 186, 0.7); /* Adjust the color and opacity as needed */
+    border-width: 3px; /* Adjust the border width as needed */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2b3284;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #fbfbfb;
+    color: black;
+}
+
+input[type="submit"]:active {
+    background-color: #fefffd;
+}

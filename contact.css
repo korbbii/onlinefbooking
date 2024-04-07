@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: #373668;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center; /* Center text within header */
+}
+
+header h1 {
+    padding-top: 34px;
+    font-family: "Kaushan Script", cursive;  
+    font-size: 3rem; 
+    text-align: left;
+}
+
+.user-image {
+    float: right; /* Float the user image to the right */
+    margin-top: 48px; /* Adjust margin-top as needed */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center; /* Center text within navigation */
+    padding-bottom: 50px;
+    margin-left: 150px;
+    margin-top: -46px;
+    margin-bottom: 20px;
+}
+
+a {
+    position: relative; /* Ensure positioning context */
+    color: #fff; /* Default text color */
+    text-decoration: none; /* Remove default underline */
+    overflow: hidden; /* Hide overflow */
+}
+
+a::before {
+    content: ""; /* Create pseudo-element */
+    position: absolute; /* Position relative to link */
+    width: 100%; /* Full width */
+    height: 2px; /* Height of line */
+    bottom: 0; /* Position at bottom */
+    left: 0; /* Align with left */
+    background-color: red; /* Color of the line */
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+a:hover::before {
+    transform: scaleX(1); /* Expand line on hover */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li:last-child {
+    margin-right: 1; /* Remove margin from last navigation item */
+}
+
+nav ul li a {
+    padding-top: 30px;
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+section {
+    padding: 30px 0; /* Increased padding */
+}
+
+section h2 {
+    margin-bottom: 30px; /* Increased margin bottom */
+    font-size: 2rem; /* Increased font size */
+    text-align: center;
+}
+
+section#search {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 10px; /* Increased padding */
+    border-radius: 10px; /* Increased border radius */
+    box-shadow: 0 4px 8px rgba(157, 71, 71, 0.1); /* Increased box shadow */
+}
+
+.search-form {
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 10px; /* Increased border radius */
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-bottom: 40px; /* Increased margin bottom */
+}
+
+.search-form .form-group {
+    margin-bottom: 30px; /* Adjusted margin bottom */
+}
+
+.form-group {
+    margin-bottom: 30px; /* Adjusted margin bottom */
+    text-align: center; /* Center text within form-group */
+}
+
+p {
+    text-align: center;
+
+}
+
+.search-form label {
+    margin-left: 50px;
+    margin-top: -60px; /* Adjusted margin top */
+    font-weight: bold;
+    font-size: 2.3rem; /* Increased font size */
+}
+
+.search-form button.btn-cdetails {
+    padding: 15px 30px; /* Increased padding */
+    margin-left: 20rem; /* Adjusted margin left */
+    margin:10px;
+    border: none;
+    border-radius: 10px; /* Increased border radius */
+    background-color: #2d43d6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for smoother hover effect */
+    font-size: 0.80rem; /* Increased font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box shadow for depth */
+}
+
+.flight-card {
+    padding: 30px;
+    margin-bottom: 30px; /* Increased margin bottom */
+    display: flex;
+    align-items: center;
+}
+
+.flight-card img {
+    width: 120px; /* Increased image width */
+    height: 120px; /* Increased image height */
+    margin-right: 30px; /* Increased margin right */
+}
+
+.flight-info h3 {
+    margin-top: 20px; /* Increased margin top */
+}
+
+.flight-info p {
+    margin: 10px 0; /* Increased margin */
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.flight-info a {
+    display: inline-block;
+    padding: 15px 30px; /* Increased padding */
+    background-color: #2d43d6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px; /* Increased border radius */
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.flight-info a:hover {
+    background-color: #2d43d6;
+}
+
+footer {
+    background: #2d43d6;
+    color: #fff;
+    padding: 2rem 0; /* Increased padding */
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem; /* Increased font size */
+}
+
+#contact {
+    text-align: center; /* Center text within the contact section */
+}
+
+#featured{
+    text-align: center; /* Center text within the contact section */
+    font-size: 1.2rem;
+}
+
+.reach-out-form {
+    margin-top: 30px;
+    text-align: center; /* Align form content to the center */
+    width: 400px; /* Set the width of the form */
+    margin: auto; /* Center the form horizontally */
+}
+
+.reach-out-form .form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align form elements to the left */
+}
+
+.reach-out-form label {
+    display: block; /* Display labels as blocks to align them properly */
+    font-size: 1.2rem;
+    margin-bottom: 10px; /* Adjust spacing between labels and input fields */
+}
+
+.reach-out-form input[type="text"],
+.reach-out-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc; /* Use border-bottom to create lines */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Adjust spacing between input fields */
+    font-size: 1rem; /* Adjust font size */
+}
+
+.reach-out-form input[type="submit"] {
+    background-color: #373668;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reach-out-form input[type="submit"]:hover {
+    background-color: #1e3087;
+}
